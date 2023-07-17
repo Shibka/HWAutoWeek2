@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/HWAutoWeek2/static/css/main.40847e2d.css",
-    "main.js": "/HWAutoWeek2/static/js/main.f8cf3416.js",
+    "main.css": "/HWAutoWeek2/static/css/main.f7c02d52.css",
+    "main.js": "/HWAutoWeek2/static/js/main.0a0e47eb.js",
     "static/js/787.66cb4309.chunk.js": "/HWAutoWeek2/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/HWAutoWeek2/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/HWAutoWeek2/index.html",
-    "main.40847e2d.css.map": "/HWAutoWeek2/static/css/main.40847e2d.css.map",
-    "main.f8cf3416.js.map": "/HWAutoWeek2/static/js/main.f8cf3416.js.map",
+    "main.f7c02d52.css.map": "/HWAutoWeek2/static/css/main.f7c02d52.css.map",
+    "main.0a0e47eb.js.map": "/HWAutoWeek2/static/js/main.0a0e47eb.js.map",
     "787.66cb4309.chunk.js.map": "/HWAutoWeek2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40847e2d.css",
-    "static/js/main.f8cf3416.js"
+    "static/css/main.f7c02d52.css",
+    "static/js/main.0a0e47eb.js"
   ]
 }
