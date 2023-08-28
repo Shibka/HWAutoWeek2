@@ -57,6 +57,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 </div>
 
                 <Button
+                    style={{backgroundColor: 'rgb(25, 118, 210)'}}
                     size={'small'}
                     variant={'contained'}
                     id={'hw3-button'}
