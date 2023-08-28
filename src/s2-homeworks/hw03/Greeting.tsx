@@ -1,15 +1,16 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
+import {Button} from "@mui/material";
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    onBlur: any // need to fix any
-    onEnter: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
-    lastUserName?: any // need to fix any
+    name: string // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
+    onBlur: () => void // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    error: string // need to fix any
+    totalUsers: number // need to fix any
+    lastUserName?: string// need to fix any
 }
 
 // презентационная компонента (для верстальщика)
@@ -25,7 +26,9 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
+    const inputClass = error   // need to fix with (?:)
+        ? s.errorInput
+        : ''
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -39,6 +42,8 @@ const Greeting: React.FC<GreetingPropsType> = (
             <div className={s.inputAndButtonContainer}>
                 <div>
                     <input
+                        style={{width: '300px', height:'30px', fontWeight: 'bold', fontSize: '15px'}}
+                        placeholder={''}
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
@@ -51,14 +56,16 @@ const Greeting: React.FC<GreetingPropsType> = (
                     </div>
                 </div>
 
-                <button
+                <Button
+                    size={'small'}
+                    variant={'contained'}
                     id={'hw3-button'}
                     onClick={addUser}
                     className={s.button}
                     disabled={!name.trim()}
                 >
                     add
-                </button>
+                </Button>
             </div>
 
             {lastUserName && (
